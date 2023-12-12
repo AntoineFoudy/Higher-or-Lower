@@ -1,11 +1,12 @@
 let passedNumber;
 let currentNumber;
-let combo;
+let combo = 0;
 
 function randomInt() {
     passedNumber = Math.floor(Math.random() * 101);
     console.log(passedNumber)
     document.getElementById("displayNumber").innerHTML = passedNumber;
+    document.getElementById("currentCombo").innerHTML = combo;
 }
 
 document.getElementById("higher").addEventListener("click", function() {
@@ -13,13 +14,16 @@ document.getElementById("higher").addEventListener("click", function() {
     if (currentNumber > passedNumber) {
         console.log("H Correct")
         console.log("H current number =", currentNumber)
+        combo ++;
     }
     else if (currentNumber < passedNumber) {
         console.log("H Wrong")
         console.log("H current number =", currentNumber)
+        combo = 0;
     }
     console.log(currentNumber)
     document.getElementById("displayNumber").innerHTML = currentNumber;
+    document.getElementById("currentCombo").innerHTML = combo;
     oldToNew();
 });
 
@@ -28,13 +32,16 @@ document.getElementById("lower").addEventListener("click", function() {
     if (currentNumber < passedNumber) {
         console.log("L Correct")
         console.log("L current number =", currentNumber)
+        combo ++;
     }
     else if (currentNumber > passedNumber) {
         console.log("L Wrong")
         console.log("L current number =", currentNumber)
+        combo = 0;
     }
     console.log(currentNumber)
     document.getElementById("displayNumber").innerHTML = currentNumber;
+    document.getElementById("currentCombo").innerHTML = combo;
     oldToNew();
 });
 

@@ -1,6 +1,7 @@
 let passedNumber;
 let currentNumber;
 let combo = 0;
+document.body.style.backgroundColor = "purple";
 
 function randomInt() {
     passedNumber = Math.floor(Math.random() * 101);
@@ -51,6 +52,10 @@ document.getElementById("lower").addEventListener("click", function() {
     document.getElementById("currentCombo").innerHTML = combo;
     oldToNew();
 });
+
+document.getElementById("getRidOfRules").addEventListener("click", function() {
+    document.getElementById("rules").style.display = "none";
+})
 
 function oldToNew() {
     passedNumber = currentNumber;

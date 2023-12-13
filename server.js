@@ -15,11 +15,15 @@ document.getElementById("higher").addEventListener("click", function() {
         console.log("H Correct")
         console.log("H current number =", currentNumber)
         combo ++;
+        document.body.style.backgroundColor = "green";
+
     }
     else if (currentNumber < passedNumber) {
         console.log("H Wrong")
         console.log("H current number =", currentNumber)
         combo = 0;
+        document.body.style.backgroundColor = "red";
+
     }
     console.log(currentNumber)
     document.getElementById("displayNumber").innerHTML = currentNumber;
@@ -33,11 +37,14 @@ document.getElementById("lower").addEventListener("click", function() {
         console.log("L Correct")
         console.log("L current number =", currentNumber)
         combo ++;
+        document.body.style.backgroundColor = "green";
     }
     else if (currentNumber > passedNumber) {
         console.log("L Wrong")
         console.log("L current number =", currentNumber)
         combo = 0;
+        document.body.style.backgroundColor = "red";
+
     }
     console.log(currentNumber)
     document.getElementById("displayNumber").innerHTML = currentNumber;

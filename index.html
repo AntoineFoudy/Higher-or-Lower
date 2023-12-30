@@ -8,20 +8,31 @@
     
 </head>
 <body>
-    <h1>Higher or Lower</h1>
-    <div>
+    <h1 class="Main">Higher or Lower</h1>
+
+    <div class="Main">
         <p>Number</p>
         <span id="displayNumber"></span>
     </div>
-    <div>
+
+    <div class="Main">
         <p>Your combo</p>
         <span id="currentCombo">0</span>
     </div>
-    <div>
+
+    <div id="hCombo">
+        <p>Your highest Combo Achived</p>
+        <span id="disHighCombo"></span>
+    </div>
+
+    <br>
+
+    <div class="Main">
         <button id="higher">Higer</button>
         <button id="lower">Lower</button>
     </div>
-    <div id="rules">
+
+    <div id="rules" class="Main">
         <h3>How does this game work?</h3>
         <p>The dispalyed number is the current number, your job is to guess if the next number will be higher or lower then the current number</p>
         <p>If you guess correctly the background will turn green and your combo will go up by 1</p>

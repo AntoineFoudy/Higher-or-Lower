@@ -1,6 +1,7 @@
 let passedNumber;
 let currentNumber;
 let combo = 0;
+let highestCombo = 0;
 document.body.style.backgroundColor = "purple";
 
 function randomInt() {
@@ -22,8 +23,9 @@ document.getElementById("higher").addEventListener("click", function() {
     else if (currentNumber < passedNumber) {
         console.log("H Wrong")
         console.log("H current number =", currentNumber)
-        combo = 0;
+        //combo = 0;
         document.body.style.backgroundColor = "red";
+        higherCombo();
 
     }
     console.log(currentNumber)
@@ -43,8 +45,9 @@ document.getElementById("lower").addEventListener("click", function() {
     else if (currentNumber > passedNumber) {
         console.log("L Wrong")
         console.log("L current number =", currentNumber)
-        combo = 0;
+        //combo = 0;
         document.body.style.backgroundColor = "red";
+        higherCombo();
 
     }
     console.log(currentNumber)
@@ -60,6 +63,16 @@ document.getElementById("getRidOfRules").addEventListener("click", function() {
 function oldToNew() {
     passedNumber = currentNumber;
     console.log("this", passedNumber)
+}
+
+function higherCombo() {
+    if (highestCombo <= combo) {
+        highestCombo = combo;
+        combo = 0;
+        document.getElementById("disHighCombo").innerHTML = highestCombo;
+    }
+    
+    console.log("here", highestCombo)
 }
 
 randomInt();

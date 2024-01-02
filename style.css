@@ -1,4 +1,4 @@
-.Main{
+.Main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,4 +12,20 @@
     justify-content: left;
     align-items: center;
     text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.infoBttn {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
 }

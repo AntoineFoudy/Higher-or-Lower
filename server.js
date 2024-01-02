@@ -56,8 +56,22 @@ document.getElementById("lower").addEventListener("click", function() {
     oldToNew();
 });
 
-document.getElementById("getRidOfRules").addEventListener("click", function() {
-    document.getElementById("rules").style.display = "none";
+// document.getElementById("getRidOfRules").addEventListener("click", function() {
+//     document.getElementById("rules").style.display = "none";
+//     document.getElementById("getRidOfRules").textContent = "Show";
+// })
+
+const hideOrShow = document.getElementById("getRidOfRules");
+
+hideOrShow.addEventListener("click", function() {
+    if (hideOrShow.textContent === "Hide") {
+        document.getElementById("rules").style.display = "none";
+    document.getElementById("getRidOfRules").textContent = "Show";
+    }
+    else if (hideOrShow.textContent === "Show") {
+        document.getElementById("rules").style.display = "inline";
+        document.getElementById("getRidOfRules").textContent = "Hide";
+    }
 })
 
 function oldToNew() {

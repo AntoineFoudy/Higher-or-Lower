@@ -85,6 +85,9 @@ function higherCombo() {
         combo = 0;
         document.getElementById("disHighCombo").innerHTML = highestCombo;
     }
+    else {
+        combo = 0;
+    }
     
     console.log("here", highestCombo)
 }

@@ -1,4 +1,16 @@
-.Main {
+body {
+    margin: 1px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +21,7 @@
 #hCombo {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -25,7 +37,33 @@
 .infoBttn {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+#lower {
+    color: aliceblue;
+    background-color: FireBrick;
+    padding: 20px;
+    border-radius: 15%;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+#higher {
+    color: aliceblue;
+    background-color: DarkGreen;
+    padding: 20px;
+    border-radius: 15%;
+    border: 2px solid black;
+    font-size: 16px;
 }

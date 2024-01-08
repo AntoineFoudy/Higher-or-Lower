@@ -2,7 +2,7 @@ let passedNumber;
 let currentNumber;
 let combo = 0;
 let highestCombo = 0;
-document.body.style.backgroundColor = "purple";
+document.body.style.backgroundColor = "LightSkyBlue";
 
 function randomInt() {
     passedNumber = Math.floor(Math.random() * 101);
@@ -17,14 +17,14 @@ document.getElementById("higher").addEventListener("click", function() {
         console.log("H Correct")
         console.log("H current number =", currentNumber)
         combo ++;
-        document.body.style.backgroundColor = "green";
+        document.body.style.backgroundColor = "LimeGreen";
 
     }
     else if (currentNumber < passedNumber) {
         console.log("H Wrong")
         console.log("H current number =", currentNumber)
         //combo = 0;
-        document.body.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "Crimson";
         higherCombo();
 
     }
@@ -40,13 +40,13 @@ document.getElementById("lower").addEventListener("click", function() {
         console.log("L Correct")
         console.log("L current number =", currentNumber)
         combo ++;
-        document.body.style.backgroundColor = "green";
+        document.body.style.backgroundColor = "LimeGreen";
     }
     else if (currentNumber > passedNumber) {
         console.log("L Wrong")
         console.log("L current number =", currentNumber)
         //combo = 0;
-        document.body.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "Crimson";
         higherCombo();
 
     }

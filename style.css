@@ -8,6 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 48px;
+    font-family: 'Lemon', serif;
 }
 
 .main {
@@ -16,6 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: large;
+    font-family: 'Oswald', sans-serif;
 }
 
 #hCombo {
@@ -24,6 +28,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: large;
+    font-family: 'Oswald', sans-serif;
 }
 
 .info {
@@ -32,6 +38,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: larger;
+    font-family: 'Kanit', sans-serif;
 }
 
 .infoBttn {
@@ -51,19 +59,22 @@ body {
 }
 
 #lower {
-    color: aliceblue;
     background-color: FireBrick;
-    padding: 20px;
-    border-radius: 15%;
-    border: 2px solid black;
-    font-size: 16px;
 }
 
 #higher {
-    color: aliceblue;
     background-color: DarkGreen;
-    padding: 20px;
+}
+
+.twoButtons {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: aliceblue;
     border-radius: 15%;
     border: 2px solid black;
-    font-size: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin: 25px;
+    font-family: 'Oswald', sans-serif;
 }

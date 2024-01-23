@@ -78,3 +78,7 @@ body {
     margin: 25px;
     font-family: 'Oswald', sans-serif;
 }
+
+#getRidOfRules {
+    background-color: rgb(229, 83, 219);
+}
